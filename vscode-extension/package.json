@@ -16,6 +16,11 @@
     "url": "https://github.com/akhilbehara999/genz-telugu-/issues"
   },
   "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#0F172A",
+    "theme": "dark"
+  },
+  "qna": "marketplace",
   "license": "MIT",
   "categories": [
     "Programming Languages",
