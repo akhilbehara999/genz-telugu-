@@ -1,0 +1,21 @@
+# GenZ Telugu — Conditionals ra mama
+
+marks = 85
+
+okavela marks >= 90:
+    cheppu("Dhed dhimak kaadhu, nuvvu thopu! 🏆")
+lekapothe_okavela marks >= 50:
+    cheppu("Parvaledhu mama, pass ayyav ✅")
+lekapothe:
+    cheppu("Bokka borla paddav, malli ra 📚")
+
+# Nested conditionals
+age = 20
+
+okavela age >= 18:
+    okavela age >= 21:
+        cheppu("Full adult ra!")
+    lekapothe:
+        cheppu("Just became adult!")
+lekapothe:
+    cheppu("Inka chinnodu!")

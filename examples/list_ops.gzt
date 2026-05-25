@@ -1,0 +1,12 @@
+# GenZ Telugu — List Operations ra mama
+
+fruits = ["Apple", "Banana", "Mango", "Guava"]
+
+cheppu("Total fruits:", podavu(fruits))
+cheppu("---")
+
+kosam fruit lo fruits:
+    cheppu("🍎", fruit)
+
+cheppu("---")
+cheppu("Motham:", motha_sankhya([1, 2, 3, 4, 5]))

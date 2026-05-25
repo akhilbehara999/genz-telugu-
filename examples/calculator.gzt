@@ -1,0 +1,23 @@
+# GenZ Telugu — Calculator ra
+
+pani add(a, b):
+    tirigi a + b
+
+pani sub(a, b):
+    tirigi a - b
+
+pani mul(a, b):
+    tirigi a * b
+
+pani div(a, b):
+    okavela b == 0:
+        cheppu("Error: Zero tho divide cheyaledu ra!")
+        tirigi yevaru
+    lekapothe:
+        tirigi a / b
+
+cheppu("10 + 5 =", add(10, 5))
+cheppu("10 - 5 =", sub(10, 5))
+cheppu("10 * 5 =", mul(10, 5))
+cheppu("10 / 5 =", div(10, 5))
+cheppu("10 / 0 =", div(10, 0))

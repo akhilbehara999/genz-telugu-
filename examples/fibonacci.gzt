@@ -1,0 +1,16 @@
+# GenZ Telugu — Fibonacci Series ra
+
+pani fibonacci(n):
+    okavela n <= 0:
+        tirigi []
+    okavela n == 1:
+        tirigi [0]
+
+    series = [0, 1]
+    kosam i lo paridhi(2, n):
+        next_val = series[i-1] + series[i-2]
+        series.append(next_val)
+    tirigi series
+
+cheppu("First 10 Fibonacci numbers:")
+cheppu(fibonacci(10))

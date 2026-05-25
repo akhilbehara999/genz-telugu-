@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "genz-telugu"
+version = "1.0.0"
+description = "Write Python using Telugu-inspired Gen-Z syntax. Translate, run, and learn programming in a fun and familiar way."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.8"
+authors = [
+    {name = "GenZ Telugu Contributors"}
+]
+keywords = [
+    "telugu",
+    "python",
+    "genz",
+    "coding",
+    "education",
+    "programming-language",
+    "india",
+    "learning",
+    "students",
+    "telugu-coding",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Education",
+    "Topic :: Software Development :: Code Generators",
+    "Topic :: Software Development :: Interpreters",
+]
+
+[project.scripts]
+genz = "genztelugu.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/yourusername/genz-telugu"
+Repository = "https://github.com/yourusername/genz-telugu"
+Issues = "https://github.com/yourusername/genz-telugu/issues"
+
+[tool.setuptools.packages.find]
+include = ["genztelugu*"]
+
+[tool.setuptools.package-data]
+genztelugu = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

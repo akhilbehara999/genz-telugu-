@@ -1,0 +1,35 @@
+{
+  "comments": {
+    "lineComment": "#"
+  },
+  "brackets": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"]
+  ],
+  "autoClosingPairs": [
+    { "open": "{", "close": "}" },
+    { "open": "[", "close": "]" },
+    { "open": "(", "close": ")" },
+    { "open": "\"", "close": "\"", "notIn": ["string"] },
+    { "open": "'", "close": "'", "notIn": ["string"] }
+  ],
+  "surroundingPairs": [
+    { "open": "{", "close": "}" },
+    { "open": "[", "close": "]" },
+    { "open": "(", "close": ")" },
+    { "open": "\"", "close": "\"" },
+    { "open": "'", "close": "'" }
+  ],
+  "indentationRules": {
+    "increaseIndentPattern": "^\\s*(okavela|lekapothe_okavela|lekapothe|kosam|antha_varaku|pani).*:\\s*$",
+    "decreaseIndentPattern": "^\\s*(lekapothe_okavela|lekapothe)\\b"
+  },
+  "wordPattern": "(-?\\d*\\.\\d+)|(\\w+)",
+  "onEnterRules": [
+    {
+      "beforeText": "^\\s*(okavela|lekapothe_okavela|lekapothe|kosam|antha_varaku|pani).*:\\s*$",
+      "action": { "indent": "indent" }
+    }
+  ]
+}

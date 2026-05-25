@@ -1,0 +1,132 @@
+{
+  "Print Statement": {
+    "prefix": ["cheppu", "printgzt"],
+    "body": ["cheppu(\"${1:message}\")"],
+    "description": "Print a message to console"
+  },
+  "If Statement": {
+    "prefix": ["okavela", "ifgzt"],
+    "body": [
+      "okavela ${1:condition}:",
+      "    ${2:cheppu(\"Success\")}"
+    ],
+    "description": "If conditional block"
+  },
+  "If-Else Statement": {
+    "prefix": ["ife", "ifelsegzt"],
+    "body": [
+      "okavela ${1:condition}:",
+      "    ${2:cheppu(\"True\")}",
+      "lekapothe:",
+      "    ${3:cheppu(\"False\")}"
+    ],
+    "description": "If-else conditional block"
+  },
+  "If-Elif-Else": {
+    "prefix": ["iee", "ifelifgzt"],
+    "body": [
+      "okavela ${1:condition}:",
+      "    ${2:cheppu(\"First\")}",
+      "lekapothe_okavela ${3:condition}:",
+      "    ${4:cheppu(\"Second\")}",
+      "lekapothe:",
+      "    ${5:cheppu(\"Default\")}"
+    ],
+    "description": "If-elif-else block"
+  },
+  "For Loop": {
+    "prefix": ["kosam", "forgzt"],
+    "body": [
+      "kosam ${1:i} lo paridhi(${2:10}):",
+      "    ${3:cheppu(${1:i})}"
+    ],
+    "description": "For loop with range"
+  },
+  "For Loop over List": {
+    "prefix": ["forlistgzt"],
+    "body": [
+      "kosam ${1:item} lo ${2:items}:",
+      "    ${3:cheppu(${1:item})}"
+    ],
+    "description": "For loop iterating over a list"
+  },
+  "While Loop": {
+    "prefix": ["antha_varaku", "whilegzt"],
+    "body": [
+      "antha_varaku ${1:condition}:",
+      "    ${2:cheppu(\"Looping\")}"
+    ],
+    "description": "While loop"
+  },
+  "Function Definition": {
+    "prefix": ["pani", "fungzt"],
+    "body": [
+      "pani ${1:function_name}(${2:params}):",
+      "    ${3:cheppu(\"Hello\")}",
+      "    tirigi ${4:result}"
+    ],
+    "description": "Define a function"
+  },
+  "Function No Return": {
+    "prefix": ["funcgzt"],
+    "body": [
+      "pani ${1:function_name}(${2:params}):",
+      "    ${3:# code here}"
+    ],
+    "description": "Define a function without return"
+  },
+  "Variables": {
+    "prefix": ["varsgzt"],
+    "body": [
+      "${1:name} = ${2:\"value\"}",
+      "cheppu(\"${1:name}:\", ${1:name})"
+    ],
+    "description": "Variable declaration and print"
+  },
+  "List Declaration": {
+    "prefix": ["gumpu", "listgzt"],
+    "body": ["${1:items} = [${2:\"a\", \"b\", \"c\"}]"],
+    "description": "Declare a list"
+  },
+  "Hello World": {
+    "prefix": ["hello", "hellogzt"],
+    "body": ["cheppu(\"Hello ra mama! 🔥\")"],
+    "description": "Hello World in GenZ Telugu"
+  },
+  "Try-Except": {
+    "prefix": ["trygzt"],
+    "body": [
+      "okavela nijam:",
+      "    ${1:# code that might fail}",
+      "lekapothe:",
+      "    ${2:cheppu(\"Error occurred\")}"
+    ],
+    "description": "Simple error handling pattern"
+  },
+  "Main Block": {
+    "prefix": ["maingzt"],
+    "body": [
+      "pani main():",
+      "    ${1:cheppu(\"Hello from main!\")}",
+      "",
+      "okavela __name__ == \"__main__\":",
+      "    main()"
+    ],
+    "description": "Main function block"
+  },
+  "Break": {
+    "prefix": ["vadhilesi", "breakgzt"],
+    "body": ["vadhilesi"],
+    "description": "Break out of loop"
+  },
+  "Continue": {
+    "prefix": ["konasagu", "continuegzt"],
+    "body": ["konasagu"],
+    "description": "Continue to next iteration"
+  },
+  "Pass": {
+    "prefix": ["kurcho", "passgzt"],
+    "body": ["kurcho"],
+    "description": "Pass (do nothing)"
+  }
+}

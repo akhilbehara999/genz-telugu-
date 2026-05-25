@@ -1,0 +1,165 @@
+{
+  "name": "genz-telugu",
+  "displayName": "GenZ Telugu",
+  "description": "Write Python using Telugu-inspired Gen-Z syntax. Translate, run, and learn programming in a fun and familiar way.",
+  "version": "1.0.0",
+  "publisher": "genz-telugu",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "icon": "images/icon.png",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/genz-telugu"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/genz-telugu/issues"
+  },
+  "homepage": "https://github.com/yourusername/genz-telugu/blob/main/vscode-extension/README.md",
+  "categories": [
+    "Programming Languages",
+    "Snippets",
+    "Education"
+  ],
+  "keywords": [
+    "telugu",
+    "python",
+    "genz",
+    "coding",
+    "education",
+    "programming-language",
+    "india",
+    "learning",
+    "students"
+  ],
+  "activationEvents": [
+    "onLanguage:genztelugu",
+    "onCommand:genztelugu.runFile",
+    "onCommand:genztelugu.translateFile",
+    "onCommand:genztelugu.showKeywords"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "genztelugu",
+        "aliases": [
+          "GenZ Telugu",
+          "genztelugu"
+        ],
+        "extensions": [
+          ".gzt"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "genztelugu",
+        "scopeName": "source.genztelugu",
+        "path": "./syntaxes/genztelugu.tmLanguage.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "genztelugu.runFile",
+        "title": "GenZ Telugu: Run File",
+        "icon": "$(play)"
+      },
+      {
+        "command": "genztelugu.translateFile",
+        "title": "GenZ Telugu: Translate to Python",
+        "icon": "$(symbol-event)"
+      },
+      {
+        "command": "genztelugu.showKeywords",
+        "title": "GenZ Telugu: Show Keywords Reference"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "when": "editorLangId == genztelugu",
+          "command": "genztelugu.runFile",
+          "group": "navigation"
+        },
+        {
+          "when": "editorLangId == genztelugu",
+          "command": "genztelugu.translateFile",
+          "group": "navigation"
+        }
+      ],
+      "explorer/context": [
+        {
+          "when": "resourceExtname == .gzt",
+          "command": "genztelugu.runFile",
+          "group": "navigation"
+        },
+        {
+          "when": "resourceExtname == .gzt",
+          "command": "genztelugu.translateFile",
+          "group": "navigation"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "genztelugu.runFile",
+          "when": "editorLangId == genztelugu"
+        },
+        {
+          "command": "genztelugu.translateFile",
+          "when": "editorLangId == genztelugu"
+        },
+        {
+          "command": "genztelugu.showKeywords"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "genztelugu.runFile",
+        "key": "ctrl+enter",
+        "when": "editorLangId == genztelugu"
+      },
+      {
+        "command": "genztelugu.translateFile",
+        "key": "ctrl+shift+t",
+        "when": "editorLangId == genztelugu"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "genztelugu",
+        "path": "./snippets/genztelugu.code-snippets"
+      }
+    ],
+    "configuration": {
+      "title": "GenZ Telugu",
+      "properties": {
+        "genztelugu.pythonPath": {
+          "type": "string",
+          "default": "python",
+          "description": "Path to Python executable for running .gzt files"
+        },
+        "genztelugu.autoTranslate": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically show translated Python when running"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.75.0",
+    "@types/node": "^18.0.0",
+    "typescript": "^5.0.0",
+    "@vscode/vsce": "^2.24.0"
+  }
+}

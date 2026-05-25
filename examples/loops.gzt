@@ -1,0 +1,21 @@
+# GenZ Telugu — Loops ra
+
+# For loop with range
+kosam i lo paridhi(1, 6):
+    cheppu("Number:", i)
+
+cheppu("---")
+
+# Table of 5
+kosam i lo paridhi(1, 11):
+    cheppu("5 x", i, "=", 5 * i)
+
+cheppu("---")
+
+# While loop
+count = 1
+antha_varaku count <= 5:
+    cheppu("Count:", count)
+    count = count + 1
+
+cheppu("Loop ayipoyindi! 🎉")

@@ -1,0 +1,18 @@
+# GenZ Telugu — Guess the Number Game
+
+vinu random
+
+secret = random.randint(1, 10)
+cheppu("1 nundi 10 varaku number guess cheyi!")
+cheppu("(Secret number:", secret, ")")
+
+pani check_guess(guess, secret):
+    okavela guess == secret:
+        tirigi "Correct ra mama! 🎉🎉"
+    lekapothe_okavela guess < secret:
+        tirigi "Inka pedda number cheyi! ⬆️"
+    lekapothe:
+        tirigi "Inka chinna number cheyi! ⬇️"
+
+kosam guess lo [3, 7, secret]:
+    cheppu("Guess:", guess, "→", check_guess(guess, secret))

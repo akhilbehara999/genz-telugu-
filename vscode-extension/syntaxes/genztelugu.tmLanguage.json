@@ -1,0 +1,111 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "GenZ Telugu",
+  "scopeName": "source.genztelugu",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#builtins"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "include": "#operators"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.number-sign.genztelugu",
+          "match": "#.*$"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.genztelugu",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            {
+              "name": "constant.character.escape.genztelugu",
+              "match": "\\\\."
+            }
+          ]
+        },
+        {
+          "name": "string.quoted.single.genztelugu",
+          "begin": "'",
+          "end": "'",
+          "patterns": [
+            {
+              "name": "constant.character.escape.genztelugu",
+              "match": "\\\\."
+            }
+          ]
+        },
+        {
+          "name": "string.quoted.triple.double.genztelugu",
+          "begin": "\"\"\"",
+          "end": "\"\"\""
+        },
+        {
+          "name": "string.quoted.triple.single.genztelugu",
+          "begin": "'''",
+          "end": "'''"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.flow.genztelugu",
+          "match": "\\b(okavela|lekapothe_okavela|lekapothe|kosam|lo|antha_varaku|vadhilesi|konasagu|kurcho|mariyu|leda|kadhu|nijam|abaddam|yevaru|tirigi)\\b"
+        },
+        {
+          "name": "keyword.declaration.genztelugu",
+          "match": "\\b(pani|vinu)\\b"
+        },
+        {
+          "name": "keyword.output.genztelugu",
+          "match": "\\bcheppu\\b"
+        }
+      ]
+    },
+    "builtins": {
+      "patterns": [
+        {
+          "name": "support.function.builtin.genztelugu",
+          "match": "\\b(adugu|podavu|sankhya|padham|bhinna_sankhya|motha_sankhya|gumpu|bokka|paridhi)\\b"
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.genztelugu",
+          "match": "\\b\\d+(\\.\\d+)?\\b"
+        }
+      ]
+    },
+    "operators": {
+      "patterns": [
+        {
+          "name": "keyword.operator.genztelugu",
+          "match": "(==|!=|<=|>=|<|>|\\+|-|\\*|/|%|\\*\\*|//|&|\\||\\^|~|<<|>>)"
+        }
+      ]
+    }
+  }
+}
