@@ -1,5 +1,5 @@
 {
-  "name": "genz-telugu",
+  "name": "genz-telugu-lang",
   "displayName": "GenZ Telugu",
   "description": "Write Python using Telugu-inspired Gen-Z syntax. Translate, run, and learn programming in a fun and familiar way.",
   "version": "1.0.0",
@@ -44,7 +44,7 @@
     "onCommand:genztelugu.translateFile",
     "onCommand:genztelugu.showKeywords"
   ],
-  "main": "./out/extension.js",
+  "main": "out/extension.js",
   "contributes": {
     "languages": [
       {
