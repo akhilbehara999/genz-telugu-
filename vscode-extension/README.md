@@ -2,6 +2,13 @@
 
 > Write Python using Telugu-inspired Gen-Z syntax. Translate, run, and learn programming in a fun and familiar way. 🔥
 
+<p align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=genz-telugu.genz-telugu-lang"><img src="https://img.shields.io/visual-studio-marketplace/v/genz-telugu.genz-telugu-lang" alt="VS Code Marketplace Version" /></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=genz-telugu.genz-telugu-lang"><img src="https://img.shields.io/visual-studio-marketplace/i/genz-telugu.genz-telugu-lang" alt="Installs" /></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=genz-telugu.genz-telugu-lang"><img src="https://img.shields.io/visual-studio-marketplace/r/genz-telugu.genz-telugu-lang" alt="Rating" /></a>
+  <a href="https://github.com/akhilbehara999/genz-telugu-/blob/main/LICENSE"><img src="https://img.shields.io/github/license/akhilbehara999/genz-telugu-.svg" alt="License" /></a>
+</p>
+
 ## Features
 
 ### Syntax Highlighting
@@ -152,4 +159,4 @@ MIT
 
 ## Repository
 
-[GitHub](https://github.com/yourusername/genz-telugu)
+[GitHub](https://github.com/akhilbehara999/genz-telugu-)

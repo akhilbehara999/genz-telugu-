@@ -11,7 +11,9 @@
 <p align="center">
   <a href="https://github.com/akhilbehara999/genz-telugu-/actions/workflows/ci.yml"><img src="https://github.com/akhilbehara999/genz-telugu-/actions/workflows/ci.yml/badge.svg" alt="Build Status" /></a>
   <a href="https://pypi.org/project/genz-telugu/"><img src="https://img.shields.io/pypi/v/genz-telugu.svg" alt="PyPI Version" /></a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=genz-telugu.genz-telugu"><img src="https://img.shields.io/visualstudio/marketplace/v/genz-telugu.genz-telugu.svg" alt="VS Code Extension" /></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=genz-telugu.genz-telugu-lang"><img src="https://img.shields.io/visual-studio-marketplace/v/genz-telugu.genz-telugu-lang" alt="VS Code Extension" /></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=genz-telugu.genz-telugu-lang"><img src="https://img.shields.io/visual-studio-marketplace/i/genz-telugu.genz-telugu-lang" alt="Installs" /></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=genz-telugu.genz-telugu-lang"><img src="https://img.shields.io/visual-studio-marketplace/r/genz-telugu.genz-telugu-lang" alt="Rating" /></a>
   <a href="https://github.com/akhilbehara999/genz-telugu-/blob/main/LICENSE"><img src="https://img.shields.io/github/license/akhilbehara999/genz-telugu-.svg" alt="License" /></a>
 </p>
 
