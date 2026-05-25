@@ -7,16 +7,16 @@
   "engines": {
     "vscode": "^1.75.0"
   },
-  "icon": "images/icon.png",
-  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/genz-telugu"
+    "url": "https://github.com/akhilbehara999/genz-telugu-"
   },
+  "homepage": "https://github.com/akhilbehara999/genz-telugu-/blob/main/vscode-extension/README.md",
   "bugs": {
-    "url": "https://github.com/yourusername/genz-telugu/issues"
+    "url": "https://github.com/akhilbehara999/genz-telugu-/issues"
   },
-  "homepage": "https://github.com/yourusername/genz-telugu/blob/main/vscode-extension/README.md",
+  "icon": "images/icon.png",
+  "license": "MIT",
   "categories": [
     "Programming Languages",
     "Snippets",

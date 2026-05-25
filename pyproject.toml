@@ -45,9 +45,9 @@ classifiers = [
 genz = "genztelugu.__main__:main"
 
 [project.urls]
-Homepage = "https://github.com/yourusername/genz-telugu"
-Repository = "https://github.com/yourusername/genz-telugu"
-Issues = "https://github.com/yourusername/genz-telugu/issues"
+Homepage = "https://github.com/akhilbehara999/genz-telugu-"
+Repository = "https://github.com/akhilbehara999/genz-telugu-"
+Issues = "https://github.com/akhilbehara999/genz-telugu-/issues"
 
 [tool.setuptools.packages.find]
 include = ["genztelugu*"]
